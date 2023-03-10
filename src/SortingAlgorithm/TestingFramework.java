@@ -18,7 +18,7 @@ public class TestingFramework {
         };
         return arr;
     }
-
+    // 对数器的使用
     public static void main(String[] args){
         int testTime = 500000;
         int maxSize = 100;
