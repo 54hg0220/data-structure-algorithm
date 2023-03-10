@@ -2,9 +2,9 @@ package SortingAlgorithm;
 
 //冒泡排序
 public class BubbleSort {
-    public static void bubblesort(int[] arr){
+    public static int[] bubblesort(int[] arr){
         if (arr == null || arr.length <2){
-            return;
+            return arr;
         }
         for (int e = arr.length-1;e>0;e--){
             for (int i =0; i<e;i++){
@@ -13,6 +13,7 @@ public class BubbleSort {
                 }
             }
         }
+        return arr;
     }
 
     private static void swap(int[] arr, int i, int j) {

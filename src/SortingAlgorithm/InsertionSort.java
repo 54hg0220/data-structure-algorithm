@@ -14,15 +14,15 @@ public class InsertionSort {
     // 这个算法的时间复杂度是O(N^2)
     // 但是我们估计这个算法的时间复杂度要按最差的情况来估计
 
-    public static void insertionSort(int[] arr){
+    public static int[] insertionSort(int[] arr){
         if (arr ==null || arr.length<2){
-            return;
+            return arr;
         }
         for (int i = 1; i < arr.length;i++){
-            for (int j=i-1;j>0&&arr[j]>arr[j+1];j--){
+            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--){
                 swap(arr,j,j+1);
             }
         }
-
+        return arr;
     }
 }
